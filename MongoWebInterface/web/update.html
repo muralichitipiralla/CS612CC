@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Update Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h4>Please Enter the Customer information to update:</h4>
+        <hr/>
+        <form name="form" method="post" action="MongoCrudServlet">
+            Serial No: <input type="text" name="serialNo"/> <br/>
+            Name: <input type="text" name="name"/> <br/>
+            Email ID: <input type="text" name="emailId"/> <br/>
+            <input type="hidden" name="operation" value="update">
+            <input type="submit" value="Update Document" />
+        </form>
+        
+        <a href="index.html">Back to Home Page</a><br/>
+    </body>
+</html>

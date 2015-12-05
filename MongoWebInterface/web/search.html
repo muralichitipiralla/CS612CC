@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Search Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h4>Please Enter the Customer Serial Number to Search:</h4>
+        <hr/>
+        <form name="form" method="post" action="MongoCrudServlet">
+            Serial No: <input type="text" name="serialNo"/> <br/>
+            <input type="hidden" name="operation" value="search">
+            <input type="submit" value="Search Document" />
+        </form>
+        <a href="index.html">Back to Home Page</a><br/>
+    </body>
+</html>
